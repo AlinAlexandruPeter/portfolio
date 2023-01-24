@@ -29,7 +29,7 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("sending...");
-    let response = await fetch("http://localhost:5000/contact", {
+    let response = await fetch(`${window.location.protocol}//${window.location.host}/contact`, {
       method: "POST",
       headers: { "Content-Type": "Application/json;charset=utf-8" },
       body: JSON.stringify(formDetails),
