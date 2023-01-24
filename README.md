@@ -8,9 +8,11 @@ Linkul catre Portofoliul meu:
  
 Pentru mai multe informatii contactati-ma:
 * prin email: peteralexandru00@gmail.com / mymone085@gmail.com
-* [Facebook>][1]
+* [Facebook][1]
 * [Instagram][2]
 * [LInkedIn][3]
+
+Dependente: `react-bootstrap` `react-bootstrap-icons` `react-mailchimp-subscribe` `react-multi-carousel` `react-on-screen` `animate.css` `bootstrap` `cors` `express` `nodemailer` 
 
 [1]: https://facebook.com/alin.alex.peter
 [2]: https://www.instagram.com/peter_aa18/
