@@ -8,14 +8,12 @@ app.use(cors());
 app.use(express.json());
 app.use("/", router);
 app.listen(process.env.PORT || 5000, () => console.log("Server: Running"));
-console.log(process.env.EMAIL_USER);
-console.log(process.env.EMAIL_PASSWORD);
 
 const contactEmail = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "peteralexandru00@gmail.com",
-    pass: "Alinpeter17!",
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
 });
 
