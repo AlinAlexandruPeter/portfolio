@@ -37,7 +37,7 @@ export default function NavBar() {
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto flex-row">
             <Nav.Link
               href="#home"
               className={
