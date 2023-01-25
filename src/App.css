@@ -747,4 +747,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .navbar-collapse.show .navbar-nav {
     flex-direciton: row;
   }
+
+  .new-email-bx button {
+    padding: 13px 30px;
+  }
+
+  .newsletter-bx {
+    padding: 35px 30px;
+  }
 }
