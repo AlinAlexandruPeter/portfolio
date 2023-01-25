@@ -738,3 +738,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+@media screen and (max-width: 450px) {
+  .projects-tab-container {
+    flex-direction: column;
+  }
+  
+  .navbar-nav {
+    flex-direciton: row;
+  }
+}
