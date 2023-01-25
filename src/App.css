@@ -744,7 +744,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     flex-direction: column;
   }
   
-  .navbar-nav {
+  .navbar-collapse.show .navbar-nav {
     flex-direciton: row;
   }
 }
