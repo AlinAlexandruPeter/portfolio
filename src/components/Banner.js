@@ -66,7 +66,7 @@ export default function Banner() {
                   companies, sport clubs and physical people to bring their
                   activity on the web. I am a person ready to bring my best into
                   the company and loves being challenged. I can say that I see
-                  Frontend Development as an art, developers as artist sand
+                  Frontend Development as an art, developers as artist and
                   therefore I am trying to bring the best art out of my skills.
                 </p>
                 <button
