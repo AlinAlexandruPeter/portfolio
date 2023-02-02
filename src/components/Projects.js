@@ -16,7 +16,7 @@ export default function Projects() {
           <Col>
             <div className="animate__animated animate__fadeInUp animate__repeat-1">
               <h2>Projects</h2>
-              <p>these are the projects that I can proudly present</p>
+              <p>These are the projects that I can proudly present</p>
               <Tab.Container id="project-tabs" defaultActiveKey="first">
                 <Nav
                   variant="pills"
