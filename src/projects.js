@@ -3,6 +3,7 @@ import projImg2 from "./images/marvel-vs-dc.jpg";
 import projImg3 from "./images/sporting-lupeni.jpg";
 import projImg4 from "./images/nopeflix.jpg";
 import projImg5 from "./images/portfolio.png";
+import projImg6 from "./images/iss-tracker.png";
 
 export default [
   {
@@ -44,5 +45,13 @@ export default [
     imageURL: projImg5,
     projURL: "https://alinpeter.live",
     githubURL: "https://github.com/AlinAlexandruPeter/portfolio",
+  },
+  {
+    title: "ISS Tracker",
+    description:
+      "One of the most good-looking 3D ISS tracker online.",
+    imageURL: projImg6,
+    projURL: "https://isstracking.live",
+    githubURL: "https://github.com/AlinAlexandruPeter/3d-iss-tracker",
   },
 ];
