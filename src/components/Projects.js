@@ -8,6 +8,7 @@ import colorSharp2 from "../images/color-sharp2.png";
 export default function Projects() {
   const tab1 = [projects[0], projects[1]];
   const tab2 = [projects[2], projects[3]];
+  const tab3 = [projects[4], projects[5]];
 
   return (
     <section className="project" id="projects">
@@ -56,7 +57,9 @@ export default function Projects() {
                   <Tab.Pane eventKey="third">
                     <Row>
                       <div className="projects-tab-container">
-                        <ProjectCard key={4} {...projects[4]} />
+                        {tab3.map((project, index) => {
+                          return <ProjectCard key={index} {...project} />;
+                        })}
                       </div>
                     </Row>
                   </Tab.Pane>
