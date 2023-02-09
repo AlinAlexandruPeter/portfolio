@@ -83,6 +83,10 @@ export default function Skill() {
                   <img src={meter2} alt="Image" />
                   <h5>p5.js</h5>
                 </div>
+                <div className="item">
+                  <img src={meter2} alt="Image" />
+                  <h5>Three.js</h5>
+                </div>
               </Carousel>
             </div>
           </div>
