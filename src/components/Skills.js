@@ -60,32 +60,40 @@ export default function Skill() {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={meter1} alt="Skill" />
                   <h5>Web Development</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
+                  <img src={meter2} alt="Skill" />
                   <h5>UI Design</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={meter1} alt="Skill" />
                   <h5>HTML</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image" />
+                  <img src={meter3} alt="Skill" />
                   <h5>Javascript (ES6+)</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image" />
+                  <img src={meter3} alt="Skill" />
                   <h5>CSS & SASS</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
+                  <img src={meter2} alt="Skill" />
                   <h5>p5.js</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
+                  <img src={meter2} alt="Skill" />
                   <h5>Three.js</h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="Skill" />
+                  <h5>MUI v5+</h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} alt="Skill" />
+                  <h5>RESTful APIs</h5>
                 </div>
               </Carousel>
             </div>
