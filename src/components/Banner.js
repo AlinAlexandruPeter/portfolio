@@ -75,7 +75,7 @@ export default function Banner() {
                   }}
                 >
                   <a
-                    href="../resume/Resume.pdf"
+                    href="../Resume.pdf"
                     style={{ color: "white", textDecoration: "none" }}
                     target="_blank"
                   >
