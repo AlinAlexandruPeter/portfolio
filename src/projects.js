@@ -1,7 +1,7 @@
-import projImg2 from "./images/iss-tracker.jpg";
+import projImg2 from "./images/iss-tracker.png";
 import projImg3 from "./images/sporting-lupeni.jpg";
 import projImg4 from "./images/nopeflix.jpg";
-import projImg5 from "./images/gokoding.png";
+import projImg5 from "./images/gokoding.jpg";
 import projImg6 from "./images/portfolio.png";
 
 export default [
