@@ -9,7 +9,7 @@ export default [
     title: "UrTube",
     description:
       "An add-less YouTube Clone.",
-    imageURL: "https://raw.githubusercontent.com/AlinAlexandruPeter/urtube/main/public/favicon.icod",
+    imageURL: "https://raw.githubusercontent.com/AlinAlexandruPeter/urtube/main/public/favicon.ico",
     projURL: "https://urtube.netlify.app",
     githubURL: "https://github.com/AlinAlexandruPeter/urtube",
   },
