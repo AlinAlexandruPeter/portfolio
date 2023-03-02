@@ -1,3 +1,4 @@
+import projImg1 from "./images/urtube.png";
 import projImg2 from "./images/iss-tracker.png";
 import projImg3 from "./images/sporting-lupeni.jpg";
 import projImg4 from "./images/nopeflix.jpg";
@@ -9,7 +10,7 @@ export default [
     title: "UrTube",
     description:
       "An add-less YouTube Clone.",
-    imageURL: "https://raw.githubusercontent.com/AlinAlexandruPeter/urtube/main/public/favicon.ico",
+    imageURL: projImg1,
     projURL: "https://urtube.netlify.app",
     githubURL: "https://github.com/AlinAlexandruPeter/urtube",
   },
