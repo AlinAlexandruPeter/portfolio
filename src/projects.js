@@ -43,7 +43,7 @@ export default [
     description:
       "A place were you can have a coding timer and keep track of your results.",
     imageURL: projImg5,
-    projURL: "https://gokoding.online",
+    projURL: "https://gokoding.netlify.app",
     githubURL: "https://github.com/AlinAlexandruPeter/gokoding",
   },
   {
