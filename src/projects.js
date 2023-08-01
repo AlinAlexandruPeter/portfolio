@@ -51,7 +51,7 @@ export default [
     description:
       "The official Front-End Developer Portfolio of Alin-Alexandru Peter.",
     imageURL: projImg6,
-    projURL: "https://alinpeter.live",
+    projURL: "https://alinpeter.tech",
     githubURL: "https://github.com/AlinAlexandruPeter/portfolio",
   },
 ];
