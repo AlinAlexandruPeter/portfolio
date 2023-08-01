@@ -1,16 +1,24 @@
-import projImg1 from "./images/urtube.png";
-import projImg2 from "./images/iss-tracker.png";
-import projImg3 from "./images/sporting-lupeni.jpg";
-import projImg4 from "./images/nopeflix.jpg";
-import projImg5 from "./images/gokoding.jpg";
+import projImg1 from "./images/maranata.png";
+import projImg2 from "./images/urtube.png";
+import projImg3 from "./images/iss-tracker.png";
+import projImg4 from "./images/sporting-lupeni.jpg";
+import projImg5 from "./images/nopeflix.jpg";
 import projImg6 from "./images/portfolio.png";
 
 export default [
   {
+    title: "Maranata",
+    description:
+      "Maranata's Church Website.",
+    imageURL: projImg1,
+    projURL: "https://maranatalupeni.ro",
+    githubURL: "https://github.com/AlinAlexandruPeter/maranata",
+  },
+  {
     title: "UrTube",
     description:
       "An add-less YouTube Clone.",
-    imageURL: projImg1,
+    imageURL: projImg2,
     projURL: "https://urtube.netlify.app",
     githubURL: "https://github.com/AlinAlexandruPeter/urtube",
   },
@@ -18,7 +26,7 @@ export default [
     title: "ISS Tracker",
     description:
       "One of the most good-looking 3D ISS tracker online.",
-    imageURL: projImg2,
+    imageURL: projImg3,
     projURL: "https://isstracking.live",
     githubURL: "https://github.com/AlinAlexandruPeter/3d-iss-tracker",
   },
@@ -26,7 +34,7 @@ export default [
     title: "Sporting Lupeni",
     description:
       "The official website of the A.S. Sporting Lupeni soccer club.",
-    imageURL: projImg3,
+    imageURL: projImg4,
     projURL: "https://sportinglupeni.ro",
     githubURL: "https://github.com/AlinAlexandruPeter/acs-sporting",
   },
@@ -34,17 +42,9 @@ export default [
     title: "Nopeflix",
     description:
       "The Netflix clone where you can find the trailers for some of the latest movies, or your favourite genre.",
-    imageURL: projImg4,
+    imageURL: projImg5,
     projURL: "https://nopeflix.netlify.app",
     githubURL: "https://github.com/AlinAlexandruPeter/nopeflix",
-  },
-  {
-    title: "Go Koding",
-    description:
-      "A place were you can have a coding timer and keep track of your results.",
-    imageURL: projImg5,
-    projURL: "https://gokoding.netlify.app",
-    githubURL: "https://github.com/AlinAlexandruPeter/gokoding",
   },
   {
     title: "My Portfolio",
