@@ -1,10 +1,10 @@
 # Alin-Alexandru Peter's Official Portfolio
 ## English
 The link to my Portfolio:
- [alinpeter.live](https://alinpeter.live)
+ [alinpeter.live](https://alinpeter.tech)
 
 For more information about this repository you can contact me via:
-* email: peteralexandru00@gmail.com / mymone085@gmail.com
+* email: peteralexandru00@gmail.com
 * [Facebook][1]
 * [Instagram][2]
 * [LInkedIn][3]
