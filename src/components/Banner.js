@@ -69,11 +69,7 @@ export default function Banner() {
                   Frontend Development as an art, developers as artist and
                   therefore I am trying to bring the best art out of my skills.
                 </p>
-                <button
-                  onClick={(e) => {
-                    console.log(e.target);
-                  }}
-                >
+                <button>
                   <a
                     href="../Resume.pdf"
                     style={{ color: "white", textDecoration: "none" }}
