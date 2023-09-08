@@ -1,7 +1,7 @@
 # Alin-Alexandru Peter's Official Portfolio
 ## English
 The link to my Portfolio:
- [alinpeter.live](https://alinpeter.tech)
+ [alinpeter.tech](https://alinpeter.tech)
 
 For more information about this repository you can contact me via:
 * email: peteralexandru00@gmail.com
@@ -14,7 +14,7 @@ Dependencies: `react-bootstrap` `react-bootstrap-icons` `react-mailchimp-subscri
 
 ## Romana
 Linkul catre Portofoliul meu:
- [alinpeter.live](https://alinpeter.live)
+ [alinpeter.tech](https://alinpeter.live)
  
 Pentru mai multe informatii contactati-ma:
 * prin email: peteralexandru00@gmail.com / mymone085@gmail.com
