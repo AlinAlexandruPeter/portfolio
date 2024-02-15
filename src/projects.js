@@ -1,4 +1,4 @@
-import projImg1 from "./images/maranata.png";
+ximport projImg1 from "./images/maranata.png";
 import projImg2 from "./images/urtube.png";
 import projImg3 from "./images/iss-tracker.png";
 import projImg4 from "./images/sporting-lupeni.jpg";
@@ -27,7 +27,7 @@ export default [
     description:
       "One of the most good-looking 3D ISS tracker online.",
     imageURL: projImg3,
-    projURL: "https://isstracking.live",
+    projURL: "https://isstracking-live.netlify.app",
     githubURL: "https://github.com/AlinAlexandruPeter/3d-iss-tracker",
   },
   {
