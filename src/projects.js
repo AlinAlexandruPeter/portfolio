@@ -1,4 +1,4 @@
-ximport projImg1 from "./images/maranata.png";
+import projImg1 from "./images/maranata.png";
 import projImg2 from "./images/urtube.png";
 import projImg3 from "./images/iss-tracker.png";
 import projImg4 from "./images/sporting-lupeni.jpg";
