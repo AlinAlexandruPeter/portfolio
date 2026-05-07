@@ -1,23 +1,33 @@
 import React from 'react'
+import { cn } from '../lib/utils'
 
 const Home = () => {
   return (
-    <section className='bg-[url(./home-bg.webp)] bg-no-repeat bg-cover bg-center w-full h-full relative overflow-hidden pt-32'>
+    <section className='bg-[url(./home-bg.webp)] bg-no-repeat bg-cover bg-center w-full h-screen relative overflow-hidden pt-32'>
         <div className='flex flex-col items-center justify-center'>
             <div>
                 {"PETER".split("").map((char, i) => (
-                    <span key={i} className="text-8xl text-black font-[new-science] uppercase [text-shadow:0_3px_20px_rgba(116,202,193,0.4)] mr-[50px] last:mr-0">
+                    <span 
+                        key={i} 
+                        className={cn(
+                            'text-4xl text-black font-[new-science] uppercase [text-shadow:0_3px_20px_rgba(116,202,193,0.4)] mr-8 last:mr-0',
+                            "lg:text-8xl lg:mr-12"
+                        )}
+                    >
                         {char}
                     </span>
                 ))}
             </div>
-            <p className='flex flex-col items-center text-3xl font-[queensides]'>
-                <span>A missioon-driven Full-Stack Developer creating</span>
-                <span>
-                    <span className='text-(--third) mr-2'>unique</span>
-                    <span>and</span>
-                    <span className='text-(--third) inline-block m-2'>impactful</span>
-                    <span className='ml-1'>digital experiences</span>
+            <p className={cn(
+                'text-lg mt-4 flex flex-col items-center font-[queensides]',
+                'lg:text-3xl lg:flex',
+            )}>
+                <span className='text-center'>
+                    A missioon-driven Full-Stack Developer, creating
+                    <span className='text-(--third) mx-2'>unique</span>
+                    and
+                    <span className='text-(--third) inline-block mx-2'>impactful</span>
+                    digital experiences
                 </span>
             </p>
         </div>

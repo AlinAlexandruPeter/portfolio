@@ -1,13 +1,17 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import projects from '../lib/projects.jsx'
 import { cn } from '../lib/utils'
 import ProjectsIndicator from '../components/ProjectsIndicator'
 import LogoLoop from '../components/ui/LogoLoop.jsx'
+import { ScreenContext } from '../context/screen-context.js'
 
 
 const ProjectsGallery = () => {
     const [activeIndex, setActiveIndex] = useState(Math.floor(projects.length / 2));
     const [showContent, setShowContent] = useState(true);
+    const { toggleScreen } = useContext(ScreenContext);
+
+    console.log(toggleScreen)
 
     return (
       <section className='bg-secondary w-full h-full relative overflow-hidden pt-32'>

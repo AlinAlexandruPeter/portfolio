@@ -1,0 +1,62 @@
+import StaggeredMenu from './StaggeredMenu';
+import logoGray from '../assets/images/logo-gray.png';
+import logoWhite from '../assets/images/logo-white.png';
+import { useContext } from 'react';
+import { ScreenContext } from '../context/screen-context';
+
+const socialItems = [
+  { 
+    label: 'LinkedIn', 
+    link: 'https://www.linkedin.com/in/andreea-florentina-csatlos-musan-8682aa343' 
+  },
+  { 
+    label: 'Instagram', 
+    link: 'https://www.instagram.com/a._andreea_a' 
+  },
+  { 
+    label: 'Facebook', 
+    link: 'https://www.facebook.com/andreea.florentina.106' 
+  }
+];
+
+
+const MobileNavbar = () => {
+  const { screen } = useContext(ScreenContext);
+  const logoGrayPages = ["home", "project", "projects"]
+  const menuItems = [
+    { label: 'Home', link: 'home' },
+    { label: 'Projects', link: 'projects' },
+    { label: 'Experience', link: 'experience' },
+    { label: 'About Me', link: 'about' },
+    { label: 'Contact', link: 'contact' },
+  ];
+
+  return (
+    <div 
+      style={{ height: '100vh', background: 'transparent' }} 
+      className='w-full absolute lg:hidden'
+    >
+      <StaggeredMenu
+        position='right'
+        isFixed
+        items={menuItems}
+        socialItems={socialItems}
+        displaySocials
+        displayItemNumbering={false}
+        menuButtonColor='#ffffff'
+        openMenuButtonColor='#74cac1'
+        changeMenuColorOnOpen={true}
+        colors={['#74cac1', '#000']}
+        logoUrl={
+          logoGrayPages.includes(screen)
+            ? logoGray
+            : logoWhite
+        }
+        accentColor='#000'
+        className='lg:hidden z-10'
+      />
+    </div>
+  )
+}
+
+export default MobileNavbar

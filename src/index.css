@@ -3,6 +3,27 @@
 @plugin "tailwindcss-animate";
 /* @import "tw-animate-css"; */
 
+:root,
+html,
+body,
+#root {
+  min-height: 100%;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @font-face {
@@ -66,6 +87,7 @@ body {
   --primary: #858585;
   --secondary: #fafdf3;
   --third: #74cac1;
+  --forth: #7dded4;
 }
 
 img,

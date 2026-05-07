@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import drops from '../assets/images/drops-contact.png'
-import { LuFacebook, LuInstagram, LuGithub, LuLinkedin } from "react-icons/lu";
+import { 
+    LuFacebook, LuInstagram, 
+    LuGithub, LuLinkedin 
+} from "react-icons/lu";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 import { Input } from '../components/ui/input';
@@ -10,16 +13,24 @@ import { useForm } from '@formspree/react';
 import { Ring2 } from 'ldrs/react'
 import 'ldrs/react/Ring2.css'
 import toast from 'react-hot-toast';
+import { cn } from '../lib/utils';
+import { Separator } from "@/components/ui/separator"
 
 const Contact = () => {
   return (
-    <section className='bg-[url(./contact-bg.png)] flex justify-between bg-no-repeat bg-cover bg-center w-full h-full relative overflow-hidden pt-32 px-16'>
+    <section className={cn(
+        'bg-[url(./contact-bg.png)] flex justify-between bg-no-repeat bg-cover bg-center w-full h-screen relative overflow-hidden pt-32',
+        'lg:px-16'
+    )}>
         <LetsConnect />
         <ContactForm />
 
         <img
             src={drops}
-            className='absolute bottom-0 right-0'
+            className={cn(
+                'w-60 absolute bottom-1/2 right-0 -translate-y-1/2 -rotate-90 origin-bottom-right',
+                'lg:bottom-0 lg:right-0'
+            )}
             alt=''
         />
     </section>
@@ -28,30 +39,90 @@ const Contact = () => {
 
 const LetsConnect = () => {
     return (
-        <div className='flex flex-col justify-end h-full w-fit gap-6 font-[tusker-grotesk] text-[300px] uppercase text-secondary leading-none'>
+        <div className={cn(
+            'flex flex-col justify-end h-full w-fit px-2 gap-6 font-[tusker-grotesk] text-[200px] uppercase text-secondary leading-none',
+            'lg:text-[300px]'
+        )}>
+            <div className={cn(
+                'flex flex-col gap-4 mb-4',
+                'lg:hidden lg:gap-8'
+            )}>
+                <div className='flex items-center gap-4'>
+                    <Separator className={cn(
+                        'w-8 border-2 border-secondary',
+                        'lg:w-12'
+                    )} />
+                    <a href='https://www.facebook.com/alin.alex.peter' target='_blank'>
+                        <LuFacebook size={42} className='hover:scale-120 transition-all duration-150 ease' />
+                    </a>
+                    <Separator className={cn(
+                        'w-8 border-2 border-secondary',
+                        'lg:w-12'
+                    )} />
+                    <a href='https://x.com/GoKoding' target='_blank'>
+                        <FaXTwitter size={42} className='hover:scale-120 transition-all duration-150 ease' />
+                    </a>
+                    <Separator className={cn(
+                        'w-8 border-2 border-secondary',
+                        'lg:w-12'
+                    )} />
+                    <a href='https://www.instagram.com/peter_aa20' target='_blank'>
+                        <LuInstagram size={42} className='hover:scale-120 transition-all duration-150 ease' />
+                    </a>
+                </div>
+                <div className='flex items-center gap-4'>
+                    <Separator className={cn(
+                        'w-15 border-2 border-secondary',
+                        'lg:w-27'
+                    )} />
+                    <a href='https://github.com/AlinAlexandruPeter' target='_blank'>
+                        <LuGithub size={42} className='hover:scale-120 transition-all duration-150 ease' />
+                    </a>
+                    <Separator className={cn(
+                        'w-8 border-2 border-secondary',
+                        'lg:w-12'
+                    )} />
+                    <a href='https://www.linkedin.com/in/alin-alexandru-peter-3b1b93232' target='_blank'>
+                        <LuLinkedin size={42} className='hover:scale-120 transition-all duration-150 ease' />
+                    </a>
+                </div>
+                <div className='flex items-center gap-4'>
+                    <Separator className={cn(
+                        'w-4 border-2 border-secondary',
+                        'lg:w-6'
+                    )} />
+                    <a href='mailto:peteralexandru00@gmail.com'>
+                        <MdOutlineEmail size={42} className='hover:scale-120 transition-all duration-150 ease' />
+                    </a>
+                </div>
+            </div>
+
             <div className='flex items-start gap-2'>
                 <span>Let's</span>
-                <div className='flex flex-col gap-8'>
+                <div className={cn(
+                    'hidden flex-col gap-8',
+                    'lg:flex'
+                )}>
                     <div className='flex items-center gap-4'>
-                        <hr className='w-12 border-2 border-secondary' />
+                        <Separator className='w-12 border-2 border-secondary' />
                         <a href='https://www.facebook.com/alin.alex.peter' target='_blank'>
                             <LuFacebook size={42} className='hover:scale-120 transition-all duration-150 ease' />
                         </a>
-                        <hr className='w-12 border-2 border-secondary' />
+                        <Separator className='w-12 border-2 border-secondary' />
                         <a href='https://x.com/GoKoding' target='_blank'>
                             <FaXTwitter size={42} className='hover:scale-120 transition-all duration-150 ease' />
                         </a>
-                        <hr className='w-12 border-2 border-secondary' />
+                        <Separator className='w-12 border-2 border-secondary' />
                         <a href='https://www.instagram.com/peter_aa20' target='_blank'>
                             <LuInstagram size={42} className='hover:scale-120 transition-all duration-150 ease' />
                         </a>
                     </div>
                     <div className='flex items-center gap-4'>
-                        <hr className='w-27 border-2 border-secondary' />
+                        <Separator className='w-27 border-2 border-secondary' />
                         <a href='https://github.com/AlinAlexandruPeter' target='_blank'>
                             <LuGithub size={42} className='hover:scale-120 transition-all duration-150 ease' />
                         </a>
-                        <hr className='w-12 border-2 border-secondary' />
+                        <Separator className='w-12 border-2 border-secondary' />
                         <a href='https://www.linkedin.com/in/alin-alexandru-peter-3b1b93232' target='_blank'>
                             <LuLinkedin size={42} className='hover:scale-120 transition-all duration-150 ease' />
                         </a>
@@ -118,13 +189,19 @@ const ContactForm = () => {
     }, [formData])
 
     return (
-        <div className='text-secondary w-2/5 mt-6'>
+        <div className={cn(
+            'hidden text-secondary w-2/5 mt-6',
+            'lg:block'
+        )}>
             <div className='flex items-baseline gap-0 font-[plateia] text-6xl uppercase mb-6'>
                 <h1 className=''>Email</h1>
                 <hr className='w-32 border-4 border-secondary scale-x-110 relative' />
                 <h1 className=''>Me</h1>
             </div>
-            <form className='flex flex-col text-4xl gap-7' onSubmit={handleSubmit}  >
+            <form className={cn(
+                'hidden flex-col text-4xl gap-7',
+                'lg:flex'
+            )} onSubmit={handleSubmit}>
                 <div className='flex items-between w-full gap-12'>
                     <Input
                         type='text'
