@@ -1,0 +1,172 @@
+import React from "react";
+import { RiTailwindCssFill, RiNextjsLine } from "react-icons/ri";
+import {
+    SiAxios,
+    SiExpress, 
+    SiCloudinary,
+    SiMongodb,
+    SiNodedotjs,
+    SiClerk,
+    SiGooglegemini,
+    SiSass,
+    SiMui,
+    SiReactbootstrap,
+    SiSupabase,
+    SiPostcss,
+    SiShadcnui,
+    SiAngular,
+    SiRedux,
+    SiFormspree
+} from "react-icons/si";
+import { FaReact, FaGithubAlt, FaMarkdown } from "react-icons/fa";
+import { TbBrandSocketIo, TbBrandFramerMotion } from "react-icons/tb";
+import projectsImages from "./projectsImages";
+
+const projects = [
+    {
+        name: "ChatSpace",
+        images: [projectsImages[0].image, projectsImages[0].imageBlack],
+        technologies: [
+            { node: <FaReact />, title: "React", href: "https://react.dev"},
+            { node: <RiTailwindCssFill />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+            { node: <SiNodedotjs />, title: "Node.js", href: "https://nodejs.org/en" },
+            { node: <SiExpress />, title: "Express", href: "https://expressjs.com" },
+            { node: <SiAxios />, title: "Axios", href: "https://axios-http.com" },
+            { node: <TbBrandSocketIo />, title: "Socket.io", href: "https://socket.io" },
+            { node: <SiCloudinary />, title: "Cloudinary", href: "https://cloudinary.com" },
+            { node: <SiMongodb />, title: "MongoDB", href: "https://www.mongodb.com" },
+        ],
+        description: "A real-time chat application with really sweet features.\n Maybe one day it will outdo WhatsApp 🤔",
+        github: "https://github.com/AlinAlexandruPeter/chatspace",
+        live: "https://chat-space.vercel.app/",
+    },
+    {
+        name: "NovaAI",
+        images: [projectsImages[1].image, projectsImages[1].imageBlack],
+        technologies: [
+            { node: <FaReact />, title: "React", href: "https://react.dev" },
+            { node: <RiTailwindCssFill />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+            { node: <SiNodedotjs />, title: "Node.js", href: "https://nodejs.org/en" },
+            { node: <SiExpress />, title: "Express", href: "https://expressjs.com" },
+            { node: <SiClerk />, title: "Clerk", href: "https://clerk.com" },
+            { node: <SiGooglegemini />, title: "Google Gemini API", href: "https://ai.google.dev" },
+            { node: <SiMongodb />, title: "MongoDB", href: "https://www.mongodb.com" },
+        ],
+        description: "I am just trying to build something cool, like ChatGPT.",
+        github: "https://github.com/AlinAlexandruPeter/nova-ai",
+        live: "https://chat-space.vercel.app/",
+    },
+    {
+        name: "Maranata",
+        images: [projectsImages[2].image, projectsImages[2].imageBlack],
+        technologies: [
+            { node: <FaReact />, title: "React", href: "https://react.dev" },
+            { node: <SiAxios />, title: "Axios", href: "https://axios-http.com" },
+            { node: <SiSass />, title: "Sass", href: "https://sass-lang.com" },
+            { node: <SiMui />, title: "Material UI", href: "https://mui.com" },
+            { node: <SiReactbootstrap />, title: "React Bootstrap", href: "https://react-bootstrap.github.io" },
+        ],
+        description: "One of my first projects. It is the website of a local church, made with creativity and love.",
+        github: "https://github.com/AlinAlexandruPeter/maranata-website",
+        live: "https://chat-space.vercel.app/",
+    },
+    {
+        name: "Debugged Life",
+        images: [projectsImages[3].image, projectsImages[3].imageBlack],
+        technologies: [
+            { node: <RiNextjsLine />, title: "Next.js", href: "https://nextjs.org" },
+            { node: <RiTailwindCssFill />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+            { node: <SiSupabase />, title: "Supabase", href: "https://supabase.io" },
+            { node: <FaGithubAlt />, title: "GitHub Slugger", href: "https://www.npmjs.com/package/github-slugger" },
+            { node: <SiPostcss />, title: "PostCSS", href: "https://postcss.org" },
+            { node: <FaMarkdown />, title: "Markdown", href: "https://www.markdownguide.org"  },
+        ],
+        description: "This is my official blog. Check it out if you want to know more about my life and tech knowledge.",
+        github: "https://github.com/AlinAlexandruPeter/maranata-website",
+        live: "https://chat-space.vercel.app/",
+    },
+    {
+        name: "My Portfolio",
+        images: [projectsImages[4].image, projectsImages[4].imageBlack],
+        technologies: [
+            { node: <FaReact />, title: "React", href: "https://react.dev" },
+            { node: <RiTailwindCssFill />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+            { node: <TbBrandFramerMotion />, title: "Framer Motion", href: "https://motion.dev" },
+            { node: <SiShadcnui />, title: "ShadCN/UI", href: "https://ui.shadcn.com" },
+            { node: <SiFormspree />, title: "Formspree", href: "https://formspree.io" },
+        ],
+        description: "I think you already know what this project is about... :))",
+        github: "https://github.com/AlinAlexandruPeter/maranata-website",
+        live: "https://chat-space.vercel.app/",
+    },
+    {
+        name: "Solaris Tales",
+        images: [projectsImages[5].image, projectsImages[5].imageBlack],
+        // image: solarisTales,
+        technologies: [
+            { node: <RiNextjsLine />, title: "Next.js", href: "https://nextjs.org" },
+            { node: <RiTailwindCssFill />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+            { node: <SiShadcnui />, title: "ShadCN/UI", href: "https://ui.shadcn.com" },
+            { node: <SiRedux />, title: "Redux", href: "https://redux.js.org" },
+            { node: <SiMongodb />, title: "MongoDB", href: "https://www.mongodb.com" },
+        ],
+        description: "The official website of Solaris Tales book publisher.",
+        github: "https://github.com/AlinAlexandruPeter/maranata-website",
+        live: "https://chat-space.vercel.app/",
+    },
+    {
+        name: "Prompt World",
+        images: [projectsImages[6].image, projectsImages[6].imageBlack],
+        technologies: [
+            { node: <FaReact />, title: "React", href: "https://react.dev" },
+            { node: <RiTailwindCssFill />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+            { node: <TbBrandFramerMotion />, title: "Framer Motion", href: "https://motion.dev" },
+            { node: <SiShadcnui />, title: "ShadCN/UI", href: "https://ui.shadcn.com" },
+        ],
+        description: "Maybe you don't know what to ask ChatGPT 😅. Try one of these prompts in an open-source world.",
+        github: "https://github.com/AlinAlexandruPeter/maranata-website",
+        live: "https://chat-space.vercel.app/",
+    },
+    {
+        name: "Chesslyze",
+        images: [projectsImages[7].image, projectsImages[7].imageBlack],
+        technologies: [
+            { node: <FaReact />, title: "React", href: "https://react.dev" },
+            { node: <RiTailwindCssFill />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+            { node: <TbBrandFramerMotion />, title: "Framer Motion", href: "https://motion.dev" },
+            { node: <SiShadcnui />, title: "ShadCN/UI", href: "https://ui.shadcn.com" },
+        ],
+        description: "Sometimes I think combining passions brings out the best in you. By the way, if you play chess and want a game analyzer, check out Chesslyze.",
+        github: "https://github.com/AlinAlexandruPeter/maranata-website",
+        live: "https://chat-space.vercel.app/",
+    },
+    {
+        name: "InstaCLone",
+        images: [projectsImages[8].image, projectsImages[8].imageBlack],
+        technologies: [
+            { node: <FaReact />, title: "React", },
+            { node: <RiTailwindCssFill />, title: "Tailwind CSS" },
+            { node: <TbBrandFramerMotion />, title: "Framer Motion" },
+            { node: <SiShadcnui />, title: "ShadCN/UI" },
+        ],
+        description: "If you've checked the other projects, probably you think I am trying to take over Meta 😂",
+        github: "https://github.com/AlinAlexandruPeter/maranata-website",
+        live: "https://chat-space.vercel.app/",
+    },
+    {
+        name: "Passaparola",
+        images: [projectsImages[9].image, projectsImages[9].imageBlack],
+        // image: passaparola,
+        technologies: [
+            { node: <SiAngular />, title: "Angular", href: "https://angular.io" },
+            { node: <RiTailwindCssFill />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+            { node: <TbBrandFramerMotion />, title: "Framer Motion", href: "https://motion.dev" },
+            { node: <SiShadcnui />, title: "ShadCN/UI", href: "https://ui.shadcn.com" },
+        ],
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
+        github: "https://github.com/AlinAlexandruPeter/maranata-website",
+        live: "https://chat-space.vercel.app/",
+    },
+]
+
+export default projects
