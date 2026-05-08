@@ -20,7 +20,7 @@ const Contact = () => {
   return (
     <section className={cn(
         'bg-[url(./contact-bg.png)] flex justify-between bg-no-repeat bg-cover bg-center w-full h-screen relative overflow-hidden pt-32',
-        'lg:px-16'
+        'lg:pt-16'
     )}>
         <LetsConnect />
         <ContactForm />
@@ -28,7 +28,7 @@ const Contact = () => {
         <img
             src={drops}
             className={cn(
-                'w-60 absolute bottom-1/2 right-0 -translate-y-1/2 -rotate-90 origin-bottom-right',
+                'w-60 absolute bottom-1/2 right-0 -translate-y-1/2 -rotate-90 origin-bottom-right pointer-events-none',
                 'lg:bottom-0 lg:right-0'
             )}
             alt=''
@@ -41,11 +41,13 @@ const LetsConnect = () => {
     return (
         <div className={cn(
             'flex flex-col justify-end h-full w-fit px-2 gap-6 font-[tusker-grotesk] text-[200px] uppercase text-secondary leading-none',
-            'lg:text-[300px]'
+            'lg:text-[150px]',
+            'xl:text-[220px]',
+            '2xl:text-[300px]'
         )}>
             <div className={cn(
                 'flex flex-col gap-4 mb-4',
-                'lg:hidden lg:gap-8'
+                'lg:hidden',
             )}>
                 <div className='flex items-center gap-4'>
                     <Separator className={cn(
@@ -97,11 +99,14 @@ const LetsConnect = () => {
                 </div>
             </div>
 
-            <div className='flex items-start gap-2'>
+            <div className={cn(
+                'flex items-end gap-2',
+                '2xl:items-start'
+            )}>
                 <span>Let's</span>
                 <div className={cn(
                     'hidden flex-col gap-8',
-                    'lg:flex'
+                    'lg:flex lg:gap-4'
                 )}>
                     <div className='flex items-center gap-4'>
                         <Separator className='w-12 border-2 border-secondary' />
@@ -147,7 +152,7 @@ const ContactForm = () => {
         email: '',
         message: '',
     });
-    const [state, handleSubmit] = useForm("xwpwlzqe");
+    const [state, handleSubmit] = useForm(import.meta.env.VITE_FORMSPREE_ID);
     const [disabled, setDisabled] = useState(true);
 
     const handleFormChange = (event) => {
@@ -193,21 +198,35 @@ const ContactForm = () => {
             'hidden text-secondary w-2/5 mt-6',
             'lg:block'
         )}>
-            <div className='flex items-baseline gap-0 font-[plateia] text-6xl uppercase mb-6'>
-                <h1 className=''>Email</h1>
-                <hr className='w-32 border-4 border-secondary scale-x-110 relative' />
-                <h1 className=''>Me</h1>
+            <div className={cn(
+                'flex items-baseline gap-0 font-[plateia] text-3xl uppercase mb-6',
+                'xl:text-4xl',
+                '2xl:text-6xl'
+            )}>
+                <h1>Email</h1>
+                <Separator className={cn(
+                    'w-32 border-2 border-secondary scale-x-110 relative',
+                    'xl:border-3',
+                    '2xl:border-4'
+                )} />
+                <h1>Me</h1>
             </div>
-            <form className={cn(
-                'hidden flex-col text-4xl gap-7',
-                'lg:flex'
-            )} onSubmit={handleSubmit}>
+            <form 
+                className={cn(
+                    'hidden flex-col text-4xl gap-7',
+                    'lg:flex'
+                )} 
+                onSubmit={handleSubmit}
+            >
                 <div className='flex items-between w-full gap-12'>
                     <Input
                         type='text'
                         placeholder='First Name'
                         name='firstName'
-                        className="text-3xl! placeholder:text-secondary/80"
+                        className={cn(
+                            "text-xl! placeholder:text-secondary/80",
+                            '2xl:text-3xl!'
+                        )}
                         value={formData.firstName}
                         onChange={handleFormChange}
                     />
@@ -215,7 +234,10 @@ const ContactForm = () => {
                         type='text'
                         placeholder='Last Name'
                         name='lastName'
-                        className="text-3xl! placeholder:text-secondary/80"
+                        className={cn(
+                            "text-xl! placeholder:text-secondary/80",
+                            '2xl:text-3xl!'
+                        )}
                         value={formData.lastName}
                         onChange={handleFormChange}
                     />
@@ -224,19 +246,34 @@ const ContactForm = () => {
                     type='email'
                     placeholder='Email'
                     name='email'
-                    className="text-3xl! placeholder:text-secondary/80"
+                    className={cn(
+                        "text-xl! placeholder:text-secondary/80",
+                        '2xl:text-3xl!'
+                    )}
                     value={formData.email}
                     onChange={handleFormChange}
                 />
                 <Textarea
                     placeholder='Message'
                     name='message'
-                    className="text-3xl! placeholder:text-secondary/80 resize-none"
+                    className={cn(
+                        "text-xl! placeholder:text-secondary/80 resize-none",
+                        '2xl:text-3xl!'
+                    )}
                     value={formData.message}
                     onChange={handleFormChange}
                 />
-                <Button disabled={disabled} className='text-2xl py-8! uppercase text-[#5DECDE] bg-secondary cursor-pointer flex flex-row-reverse items-center gap-2'>
-                    <span>{state.submitting ? "Sending..." : "Submit"}</span>
+                <Button 
+                    disabled={disabled} 
+                    className={cn(
+                        'text-lg py-2! uppercase text-[#5DECDE] bg-secondary cursor-pointer flex flex-row-reverse items-center gap-2',
+                        'xl:py-4!',
+                        '2xl:text-2xl 2xl:py-8!'
+                    )}
+                >
+                    <span>
+                        {state.submitting ? "Sending..." : "Submit"}
+                    </span>
                     {state.submitting && (
                         <Ring2
                             size="25"

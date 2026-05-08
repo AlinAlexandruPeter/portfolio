@@ -51,11 +51,12 @@ const Experience = () => {
   return (
         <section className={cn(
             'bg-[url(./experience-bg.png)] relative flex flex-row-reverse items-center justify-start bg-no-repeat bg-cover bg-center w-full h-screen overflow-hidden pt-32',
-            'lg:flex-col'
+            'lg:flex-col lg:pt-20'
         )}>
             <div className={cn(
-                'hidden w-3/4 mb-36',
-                'lg:block'
+                'hidden w-3/4 mb-12',
+                'lg:block',
+                '2xl:mb-36'
             )}>
                 <TextPressure
                     text="My Steps"
@@ -78,6 +79,8 @@ const Experience = () => {
             {/* mobile */}
             <div className={cn(
                 'flex relative items-center w-full h-full gap-4',
+                'sm:px-24',
+                'md:px-32',
                 'lg:hidden'
             )}>
                 <div className='flex gap-4 absolute top-0 right-8 text-white'>
@@ -172,8 +175,9 @@ const Experience = () => {
             />
 
             <div className={cn(
-                'hidden items-center justify-end gap-2 w-full px-40 mb-12',
-                'lg:flex'
+                'hidden items-center justify-end gap-2 w-full px-20 mb-4',
+                'lg:flex',
+                '2xl:px-40 2xl:mb-12'
             )}>
                 <button
                     className='opacity-30 hover:opacity-100 transition-all duration-200'
@@ -199,8 +203,9 @@ const Experience = () => {
 
             {/* desktop */}
             <div className={cn(
-                'hidden items-baseline-last w-full justify-center px-40 mask-[linear-gradient(to_right,transparent_5%,black_30%,var(--third)_100%)] mask-size-[100%_100%] mask-no-repeat',
-                'lg:flex'
+                'hidden items-baseline-last w-full justify-center px-20 mask-[linear-gradient(to_right,transparent_5%,black_30%,var(--third)_100%)] mask-size-[100%_100%] mask-no-repeat',
+                'lg:flex',
+                'xl:px-40'
             )}>
                 <Carousel 
                     opts={{ loop: true }} 
@@ -220,7 +225,10 @@ const Experience = () => {
                 <Carousel 
                     opts={{ loop: true, draggable: false }} 
                     setApi={setFilledApi} 
-                    className="pointer-events-none"
+                    className={cn(
+                        "pointer-events-none pr-20",
+                        'xl:pr-0'
+                    )}
                 >
                     <CarouselContent className="text-secondary">
                         {jobs.map((job, index) => (
@@ -228,17 +236,24 @@ const Experience = () => {
                                 <div className='flex flex-col items-center w-1/2 gap-1'>
                                     <h1 className={cn(
                                         'uppercase text-center text-(--third) font-[plateia] text-xl transition-all duration-300', 
-                                        selectedIndex === index ? 'opacity-100' : 'opacity-0'
+                                        selectedIndex === index ? 'opacity-100' : 'opacity-0',
+                                        'lg:text-sm'
                                     )}>{job.position}</h1>
                                     <div className={cn(
-                                        'flex items-center font-[plateia] gap-8 mb-3 text-(--third) transition-all duration-300', 
-                                        selectedIndex === index ? 'opacity-100' : 'opacity-0'
+                                        'flex items-center font-[plateia] gap-4 mb-3 text-(--third) transition-all duration-300', 
+                                        selectedIndex === index ? 'opacity-100' : 'opacity-0',
+                                        'lg:text-sm',
+                                        '2xl:gap-8'
                                     )}>
                                         <span className=''>{job.company}</span>
                                         <Separator orientation="vertical" className="bg-(--third) w-1" />
                                         <span>{job.year}</span>
                                     </div>
-                                    <h3 className={cn('mb-4 w-2/3 text-center transition-all duration-300', selectedIndex === index ? 'opacity-100' : 'opacity-0')}>{job.description}</h3>
+                                    <h3 className={cn(
+                                        'hidden mb-4 w-2/3 text-center transition-all duration-300', 
+                                        selectedIndex === index ? 'opacity-100' : 'opacity-0',
+                                        'xl:block'
+                                    )}>{job.description}</h3>
                                     <ExperienceDot isFilled />
                                 </div>
                             </CarouselItem>
@@ -268,7 +283,8 @@ const ExperienceDot = ({ isFilled = false }) => {
         <div className={cn(
             'border-4 border-(--third) rounded-full w-6 h-6 aspect-square!', 
             isFilled ? 'bg-(--third)' : 'bg-transparent',
-            'lg:w-16 lg:h-16 lg:border-10'
+            'lg:w-8 h-8 lg:border-6',
+            '2xl:w-16 2xl:h-16 2xl:border-10'
         )} />
     )
 }

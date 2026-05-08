@@ -1,13 +1,13 @@
 const jobs = [
     {
-        position: "Front-End Developer & UI/UX Designer",
+        position: "Front-End Developer",
         mobilePosition: 'Front-End Developer',
         company: "Maranata Lupeni Church",
         year: "2023",
         description: "Building and designing the church's official website."
     },
     {
-        position: "Front-End Engineer & QA Tester",
+        position: "Front-End Engineer",
         mobilePosition: 'Front-End Engineer',
         company: "Bixag",
         year: "2024",
@@ -21,7 +21,7 @@ const jobs = [
         description: "Creating visually compelling designs for marketing campaigns to enhance brand presence."
     },
     {
-        position: "Full-Stack Engineer & UI/UX Designer",
+        position: "Full-Stack Engineer",
         mobilePosition: 'Full-Stack Engineer',
         company: "Solaris Tales",
         year: "2025",

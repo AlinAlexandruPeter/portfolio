@@ -5,6 +5,8 @@ import instaClone from "../assets/images/projects-images/turqoise-v/insta-clone.
 import maranata from "../assets/images/projects-images/turqoise-v/maranata.png";
 import novaAi from "../assets/images/projects-images/turqoise-v/nova-ai.png";
 import portfolio from "../assets/images/projects-images/turqoise-v/portfolio.png";
+import mifariRaw from "../assets/images/projects-images/turqoise-v/mifariraw.png";
+import andreea from "../assets/images/projects-images/turqoise-v/andreea.png";
 import promptWorld from "../assets/images/projects-images/turqoise-v/prompt-world.png";
 import solarisTales from "../assets/images/projects-images/turqoise-v/solaris-tales.png";
 import passaparola from "../assets/images/projects-images/turqoise-v/portfolio.png";
@@ -16,6 +18,8 @@ import instaCloneBlack from "../assets/images/projects-images/black-v/insta-clon
 import maranataBlack from "../assets/images/projects-images/black-v/maranata-black.png";
 import novaAiBlack from "../assets/images/projects-images/black-v/nova-ai-black.png";
 import portfolioBlack from "../assets/images/projects-images/black-v/portfolio-black.png";
+import mifariRawBlack from "../assets/images/projects-images/black-v/mifariraw-black.png";
+import andreeaBlack from "../assets/images/projects-images/black-v/andreea-black.png";
 import promptWorldBlack from "../assets/images/projects-images/black-v/prompt-world-black.png";
 import solarisTalesBlack from "../assets/images/projects-images/black-v/solaris-tales-black.png";
 import passaparolaBlack from "../assets/images/projects-images/black-v/portfolio-black.png";
@@ -26,11 +30,13 @@ const projectsImages = [
     { id: 3, image: maranata, imageBlack: maranataBlack },
     { id: 4, image: debuggedLife, imageBlack: debuggedLifeBlack },
     { id: 5, image: portfolio, imageBlack: portfolioBlack },
-    { id: 6, image: solarisTales, imageBlack: solarisTalesBlack },
-    { id: 7, image: promptWorld, imageBlack: promptWorldBlack },
-    { id: 8, image: chesslyze, imageBlack: chesslyzeBlack },
-    { id: 9, image: instaClone, imageBlack: instaCloneBlack },
-    { id: 10, image: passaparola, imageBlack: passaparolaBlack },
+    { id: 6, image: mifariRaw, imageBlack: mifariRawBlack },
+    { id: 7, image: andreea, imageBlack: andreeaBlack },
+    { id: 8, image: solarisTales, imageBlack: solarisTalesBlack },
+    { id: 9, image: promptWorld, imageBlack: promptWorldBlack },
+    { id: 10, image: chesslyze, imageBlack: chesslyzeBlack },
+    { id: 11, image: instaClone, imageBlack: instaCloneBlack },
+    { id: 12, image: passaparola, imageBlack: passaparolaBlack },
 ]
 
 export default projectsImages
