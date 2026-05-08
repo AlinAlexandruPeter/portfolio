@@ -135,7 +135,7 @@ const projects = [
         ],
         description: "The portfolio of a Graphic Designer. Check it out and maybe you will find your next collaborator there.",
         github: "https://github.com/csatlosandreea-cmd/portofolio",
-        live: "https://chat-space.vercel.app/",
+        live: "https://portofolio-tau-sooty-53.vercel.app",
     },
     {
         name: "Solaris Tales",
