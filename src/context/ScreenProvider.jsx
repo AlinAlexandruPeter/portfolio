@@ -3,13 +3,15 @@ import { ScreenContext } from './screen-context';
 
 export function ScreenProvider({ children }) {
   const [screen, setScreen] = useState('home');
-
-  const toggleScreen = (nextScreen) => {
+  const [direction, setDirection] = useState(1)
+  
+  const toggleScreen = (nextScreen, navDirection = 1) => {
+    setDirection(navDirection);
     setScreen(nextScreen);
   };
 
   return (
-    <ScreenContext.Provider value={{ screen, toggleScreen }}>
+    <ScreenContext.Provider value={{ screen, toggleScreen, direction }}>
       {children}
     </ScreenContext.Provider>
   );

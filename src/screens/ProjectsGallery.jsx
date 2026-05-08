@@ -8,9 +8,19 @@ import ProjectsIndicator from '../components/ProjectsIndicator'
 import LogoLoop from '../components/ui/LogoLoop.jsx'
 
 const ProjectsGallery = () => {
+    const initialWinWidth = window.innerWidth
+
     const [activeIndex, setActiveIndex] = useState(Math.floor(projects.length / 2));
     const [showContent, setShowContent] = useState(true);
-    const [logoHeight, setLogoHeight] = useState(40)
+    const [logoHeight, setLogoHeight] = useState(() => {
+        if (initialWinWidth < 1280) {
+            return 40
+        } else if (initialWinWidth < 1535) {
+            return 70
+        } else {
+            return 100
+        }
+    })
     // const { toggleScreen } = useContext(ScreenContext);
 
     useEffect(() => {
