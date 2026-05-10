@@ -5,7 +5,7 @@ import RotatingText from '../components/RotatingText'
 const Home = () => {
   return (
     <section className={cn(
-        'bg-[url(./home-bg.webp)] bg-no-repeat bg-cover bg-center w-full h-screen relative overflow-hidden pt-32',
+        'bg-[url(/home-bg.webp)] bg-no-repeat bg-cover bg-center w-full h-screen relative overflow-hidden pt-32',
         'lg:pt-20',
         'xl:pt-24',
         '2xl:pt-32'

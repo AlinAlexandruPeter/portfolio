@@ -50,7 +50,7 @@ const Experience = () => {
     }
   return (
         <section className={cn(
-            'bg-[url(./experience-bg.png)] relative flex flex-row-reverse items-center justify-start bg-no-repeat bg-cover bg-center w-full h-screen overflow-hidden pt-32',
+            'bg-[url(/experience-bg.png)] relative flex flex-row-reverse items-center justify-start bg-no-repeat bg-cover bg-center w-full h-screen overflow-hidden pt-32',
             'lg:flex-col lg:pt-20'
         )}>
             <div className={cn(

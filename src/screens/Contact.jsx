@@ -19,7 +19,7 @@ import { Separator } from "@/components/ui/separator"
 const Contact = () => {
   return (
     <section className={cn(
-        'bg-[url(./contact-bg.png)] flex justify-between bg-no-repeat bg-cover bg-center w-full h-screen relative overflow-hidden pt-32',
+        'bg-[url(/contact-bg.png)] flex justify-between bg-no-repeat bg-cover bg-center w-full h-screen relative overflow-hidden pt-32',
         'lg:pt-16'
     )}>
         <LetsConnect />

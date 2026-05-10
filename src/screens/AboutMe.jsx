@@ -13,7 +13,7 @@ const AboutMe = () => {
 
   return (
     <section className={cn(
-      'flex flex-col items-end text-secondary text-[65px] py-32 font-bold font-[krona] justify-center bg-[url(./about-me-bg.png)] bg-no-repeat bg-cover bg-center w-full h-screen relative overflow-hidden px-4',
+      'flex flex-col items-end text-secondary text-[65px] py-32 font-bold font-[krona] justify-center bg-[url(/about-me-bg.png)] bg-no-repeat bg-cover bg-center w-full h-screen relative overflow-hidden px-4',
       'sm:text-[100px]',
       'lg:text-[60px] lg:px-12',
       'xl:text-[90px]',
