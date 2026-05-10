@@ -41,8 +41,9 @@ export default function IntroSequence({ children }) {
             <span
               key={index}
               className={cn(
-                "relative font-[tusker-grotesk] uppercase text-[100px] overflow-hidden inline-flex pt-2 p2",
-                '2xl:text-[200px]'
+                "relative font-[tusker-grotesk] uppercase text-[100px] overflow-hidden inline-flex pt-2 pb-2",
+                'lg:text-[150px]',
+                'xl:text-[200px]'
               )}
             >
               <motion.span variants={letterVariants}>
