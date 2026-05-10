@@ -16,8 +16,8 @@ const Home = () => {
                     <span 
                         key={i} 
                         className={cn(
-                            'text-4xl text-black font-[new-science] uppercase [text-shadow:0_3px_20px_rgba(116,202,193,0.4)] mr-8 last:mr-0',
-                            'lg:text-4xl',
+                            'text-4xl text-black font-[new-science] uppercase [text-shadow:0_2px_5px_rgba(116,202,193,1)] mr-8 last:mr-0',
+                            'lg:text-4xl lg:[text-shadow:0_3px_20px_rgba(116,202,193,0.4)]',
                             "2xl:text-8xl 2xl:mr-12"
                         )}
                     >

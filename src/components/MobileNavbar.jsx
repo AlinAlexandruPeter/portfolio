@@ -7,15 +7,15 @@ import { ScreenContext } from '../context/screen-context';
 const socialItems = [
   { 
     label: 'LinkedIn', 
-    link: 'https://www.linkedin.com/in/andreea-florentina-csatlos-musan-8682aa343' 
+    link: 'https://www.linkedin.com/in/alin-alexandru-peter-3b1b93232' 
   },
   { 
     label: 'Instagram', 
-    link: 'https://www.instagram.com/a._andreea_a' 
+    link: 'https://www.instagram.com/peter_aa21' 
   },
   { 
     label: 'Facebook', 
-    link: 'https://www.facebook.com/andreea.florentina.106' 
+    link: 'https://www.facebook.com/alin.alex.peter' 
   }
 ];
 

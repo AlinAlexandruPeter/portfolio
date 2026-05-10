@@ -68,7 +68,7 @@ const LetsConnect = () => {
                         'w-8 border-2 border-secondary',
                         'lg:w-12'
                     )} />
-                    <a href='https://www.instagram.com/peter_aa20' target='_blank'>
+                    <a href='https://www.instagram.com/peter_aa21' target='_blank'>
                         <LuInstagram size={42} className='hover:scale-120 transition-all duration-150 ease' />
                     </a>
                 </div>
