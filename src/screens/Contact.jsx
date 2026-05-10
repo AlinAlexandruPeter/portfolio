@@ -195,7 +195,7 @@ const ContactForm = () => {
 
     return (
         <div className={cn(
-            'hidden text-secondary w-2/5 mt-6',
+            'hidden text-secondary w-2/5 mt-6 mx-2',
             'lg:block'
         )}>
             <div className={cn(

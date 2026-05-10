@@ -29,7 +29,7 @@ const AboutMe = () => {
             <Separator className={cn(
               'w-16 border-6',
               'lg:w-1/3 lg:border-8',
-              '2xl:w-2/3 2xl:border-16',
+              '2xl:w-2/5 2xl:border-16',
             )} />
             <h1 className='uppercase'>Me</h1>
         </div>
@@ -37,7 +37,7 @@ const AboutMe = () => {
           'text-xl font-[inter] h-40 w-4/5 text-right mt-12',
           'sm:text-2xl',
           'lg:text-xl lg:w-1/2 lg:h-16',
-          'xl:text-2xl',
+          'xl:text-2xl xl:h-auto',
           '2xl:text-4xl',
         )}>
             {currentText}

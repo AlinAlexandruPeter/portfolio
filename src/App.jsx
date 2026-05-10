@@ -10,117 +10,105 @@ import Home from './screens/Home'
 import Intro from './screens/Intro'
 import Project from './screens/Project'
 import ProjectsGallery from './screens/ProjectsGallery'
-import { ScreenProvider } from './context/ScreenProvider'
 import { ScreenContext } from './context/screen-context'
 import { motion, AnimatePresence } from 'motion/react'
 import contactAnimation from './lib/animations/contactAnimation'
 import aboutAnimation from './lib/animations/aboutAnimation'
+import projectsAnimation from './lib/animations/projectsAnimation'
+import StairTransition from './components/StarsTransition'
+import PixelTransition from './components/PixelTransition'
+import experienceAnimation from './lib/animations/experienceAnimation'
+import homeAnimation from './lib/animations/homeAnimation'
+import IntroSequence from './components/IntroSequence'
 
 const dynamicTransitions = {
-  // How the NEW screen enters
   initial: (targetScreen) => {
     switch (targetScreen) {
       case 'home': 
-        return { opacity: 0, scale: 0.9 }; // Starts small and transparent
+        return homeAnimation.initial
       case 'contact': 
-        return { y: '100%' }; // Starts off-screen bottom
+        return contactAnimation.initial
       case 'projects': 
-        return { x: '100%', scale: 0.95 }; // Starts off-screen right
+        return projectsAnimation.initial
       case 'about': 
-        return aboutAnimation.initial; // Starts off-screen right
+        return aboutAnimation.initial
       case 'experience': 
-        return { x: '100%', scale: 0.95 }; // Starts off-screen right
+        return experienceAnimation.initial
     }
   },
   
-  // Where the NEW screen rests
   animate: (targetScreen) => {
     switch (targetScreen) {
       case 'home': 
-        return { opacity: 1, scale: 1, transition: { duration: 0.4 } };
+        return homeAnimation.animate
       case 'contact': 
-        return { y: 0, transition: { type: 'spring', bounce: 0, duration: 0.6 } };
+        return contactAnimation.animate
       case 'projects': 
-        return { 
-          x: 0, 
-          scale: 1, 
-          transition: {
-            x: { delay: 0.3, duration: 0.3, ease: "easeInOut" },
-            scale: { delay: 0.5, duration: 0.3, ease: "easeOut" }
-          }
-        };
+        return projectsAnimation.animate
       case 'about': 
-        return aboutAnimation.animate;
+        return aboutAnimation.animate
       case 'experience': 
-        return { 
-          x: 0, scale: 1, 
-          transition: { x: { duration: 0.4 }, scale: { delay: 0.4, duration: 0.3 } } 
-        }
+        return experienceAnimation.animate
     }
   },
   
-  // How the OLD screen leaves (It knows where we are going!)
   exit: (targetScreen) => {
     switch (targetScreen) {
       case 'home': 
-        return { opacity: 0, scale: 1.1, transition: { duration: 0.4 } }; // Expands outward
+        return homeAnimation.exit
       case 'contact': 
-        return { y: '-20%', opacity: 0, transition: { duration: 0.5 } }; // Pushed up slightly
+        return contactAnimation.exit
       case 'projects': 
-        return { 
-          x: '-100%', scale: 0.95, 
-          transition: { scale: { duration: 0.2 }, x: { delay: 0.2, duration: 0.4 } } 
-        };
+        return projectsAnimation.exit
       case 'about': 
-        return aboutAnimation.exit;
+        return aboutAnimation.exit
       case 'experience': 
-        return { 
-          x: '-100%', scale: 0.95, 
-          transition: { scale: { duration: 0.2 }, x: { delay: 0.2, duration: 0.4 } } 
-        };
+        return experienceAnimation.exit
     }
   }
-};
+}
 
 function App() {
-  const { screen, direction } = useContext(ScreenContext);
+  const { screen } = useContext(ScreenContext)
 
   const renderScreen = () => {
     switch (screen) {
-      case 'home': return <Home />;
-      case 'experience': return <Experience />;
-      case 'project': return <Project />;
-      case 'projects': return <ProjectsGallery />;
-      case 'about': return <AboutMe />;
-      case 'contact': return <Contact />;
-      default: return <Home />;
+      case 'home': return <Home />
+      case 'experience': return <Experience />
+      case 'project': return <Project />
+      case 'projects': return <ProjectsGallery />
+      case 'about': return <AboutMe />
+      case 'contact': return <Contact />
+      default: return <Home />
     }
-  };
+  }
 
   return (
-    <div className='relative overflow-hidden w-full h-screen bg-white'>
-      <MobileNavbar />
-      <Navbar />
+    <IntroSequence>
+      <div className='relative overflow-hidden w-full h-screen bg-secondary'>
+        <MobileNavbar />
+        <Navbar />
 
-      <AnimatePresence initial={false} custom={screen}>
-        <motion.div
-          key={screen} 
-          custom={screen}
-          
-          // 4. Absolute positioning stacks them on top of each other
-          className="absolute inset-0 w-full h-full"
-          
-          variants={dynamicTransitions}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        >
-          {renderScreen()}
-        </motion.div>
-      </AnimatePresence>
+        <AnimatePresence initial={false} custom={screen}>
+          <motion.div
+            key={screen} 
+            custom={screen}
+            className="absolute inset-0 w-full h-full"
+            variants={dynamicTransitions}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+          >
+            {renderScreen()}
+          </motion.div>
+        </AnimatePresence>
 
-      <Toaster position="bottom-right" />
-    </div>
+        <StairTransition targetScreen={screen} />
+        <PixelTransition targetScreen={screen} />
+
+        <Toaster position="bottom-right" />
+      </div>
+    </IntroSequence>
   )
 }
 

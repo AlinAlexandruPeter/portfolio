@@ -1,7 +1,7 @@
 import StaggeredMenu from './StaggeredMenu';
 import logoGray from '../assets/images/logo-gray.png';
 import logoWhite from '../assets/images/logo-white.png';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { ScreenContext } from '../context/screen-context';
 
 const socialItems = [
@@ -23,7 +23,6 @@ const socialItems = [
 const MobileNavbar = () => {
   const { screen } = useContext(ScreenContext);
   const grayLogoPages = ["home", "project", "projects"]
-  const grayButtonPages = ["home", "projects"]
 
   const menuItems = [
     { label: 'Home', link: 'home' },
@@ -32,11 +31,6 @@ const MobileNavbar = () => {
     { label: 'About Me', link: 'about' },
     { label: 'Contact', link: 'contact' },
   ];
-
-  useEffect(() => {
-    console.log(screen)
-    console.log(grayButtonPages.includes(screen))
-  }, [screen, grayButtonPages])
 
   return (
     <div 
