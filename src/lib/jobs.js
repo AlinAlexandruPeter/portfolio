@@ -34,6 +34,13 @@ const jobs = [
         year: "2025-2026",
         description: "Building and maintaining a comprehensive platform."
     },
+    {
+        position: "BFMC 2026",
+        mobilePosition: 'BFMC 2026',
+        company: "NovaVision",
+        year: "2025-2026",
+        description: "Building an autonomous vehicle."
+    },
 ]
 
 export default jobs
