@@ -43,7 +43,7 @@ const LetsConnect = () => {
             'flex flex-col justify-end h-full w-fit px-2 gap-6 font-[tusker-grotesk] text-[200px] uppercase text-secondary leading-none',
             'lg:text-[150px]',
             'xl:text-[220px]',
-            '2xl:text-[300px]'
+            '2xl:text-[260px]'
         )}>
             <div className={cn(
                 'flex flex-col gap-4 mb-4',

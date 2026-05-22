@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react'
 import projects from '../lib/projects.jsx'
 import { cn } from '../lib/utils'
 import creationOfAdam from '../assets/images/creation-of-adam.png'
-import gradient from '../assets/images/gradient.png'
 import swipe from '../assets/images/swipe.png'
 import ProjectsIndicator from '../components/ProjectsIndicator'
 import LogoLoop from '../components/ui/LogoLoop.jsx'
@@ -60,16 +59,6 @@ const ProjectsGallery = () => {
                 'lg:hidden'
             )}
         />
-
-        <img
-            src={gradient}
-            alt=''
-            className={cn(
-                'hidden absolute top-4 right-0',
-                'xl:block xl:w-100',
-                '2xl:w-160'
-            )}
-        />
         
         <ProjectsCarousel 
             activeIndex={activeIndex}
@@ -88,7 +77,7 @@ const ProjectsGallery = () => {
                     'font-black',
                     'lg:text-6xl',
                     'xl:text-8xl',
-                    '2xl:text-9xl'
+                    '2xl:text-8xl'
                 )}>{projects[activeIndex].name}</h1>
                 <LogoLoop
                     logos={projects[activeIndex].technologies}
@@ -106,19 +95,21 @@ const ProjectsGallery = () => {
                 <p className={cn(
                     'w-1/2 text-xl font-[inter] text-right',
                     'xl:text-2xl',
-                    '2xl:text-4xl'
+                    '2xl:text-3xl'
                 )}>{projects[activeIndex].description}</p>
                 <div className={cn(
                     'z-20 text-2xl flex items-center gap-6',
                     '2xl:text-4xl'
                 )}>
+                    {projects[activeIndex]?.live && (
+                        <a
+                            href={projects[activeIndex].live}
+                            className='bg-(--third) text-white px-2 mt-6 rounded-sm hover:scale-105 transition-transform duration-300'>
+                            Website
+                        </a>
+                    )}
                     <a
-                        href='https://github.com'
-                        className='bg-(--third) text-white px-2 mt-6 rounded-sm hover:scale-105 transition-transform duration-300'>
-                        Website
-                    </a>
-                    <a
-                        href='https://github.com'
+                        href={projects[activeIndex].github}
                         className='bg-(--third) text-white px-2 mt-6 rounded-sm hover:scale-105 transition-transform duration-300'>
                         GitHub
                     </a>
@@ -265,7 +256,7 @@ const ProjectsCarousel = ({
                             className={cn(
                                 'w-25',
                                 'lg:w-40',
-                                '2xl:w-60'
+                                '2xl:w-50'
                             )}
                             alt={project.name}
                         />
@@ -274,7 +265,7 @@ const ProjectsCarousel = ({
                                 'text-xl text-(--third) font-extrabold', 
                                 activeIndex !== index && 'text-transparent',
                                 'lg:text-2xl',
-                                '2xl:text-5xl'
+                                '2xl:text-4xl'
                             )
                         }>{project.name}</span>
                     </div>

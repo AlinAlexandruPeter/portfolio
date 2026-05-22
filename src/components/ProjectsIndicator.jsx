@@ -28,7 +28,11 @@ const MouseFollower = ({ img, activeIndex, index, className }) => {
 
   return (
     <div
-        className={cn("fixed w-12 aspect-square rounded-full bg-[#00FFE5] pointer-events-none transition-transform duration-[0.05s] ease-out", className)}
+        className={cn(
+            "hidden fixed w-12 aspect-square rounded-full bg-[#00FFE5] pointer-events-none transition-transform duration-[0.05s] ease-out", 
+            className,
+            'lg:block'
+        )}
         style={{
             left: `${pos.x - (activeIndex > index ? 0 : 60)}px`,
             top: `${pos.y - (activeIndex > index ? 40 : 0)}px`,

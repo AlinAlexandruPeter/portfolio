@@ -1,5 +1,5 @@
 import React from "react";
-import { RiTailwindCssFill, RiNextjsLine } from "react-icons/ri";
+import { RiTailwindCssFill, RiNextjsLine, RiAngularjsLine } from "react-icons/ri";
 import {
     SiAxios,
     SiExpress, 
@@ -23,9 +23,11 @@ import {
     SiSocketdotio,
     SiMongoose
 } from "react-icons/si";
+import { MdGpsFixed } from "react-icons/md";
 import { FaReact, FaGithubAlt, FaMarkdown } from "react-icons/fa";
 import { TbBrandSocketIo, TbBrandFramerMotion } from "react-icons/tb";
 import projectsImages from "./projectsImages";
+import { FaGit, FaPython } from "react-icons/fa6";
 
 const projects = [
     {
@@ -74,6 +76,19 @@ const projects = [
         description: "The website of a local church, made with creativity and love. It is not very complex technically, but it is very dear to my heart, since it is one of my very first projects.",
         github: "https://github.com/AlinAlexandruPeter/maranata-website",
         live: "https://maranatalupeni.ro",
+    },
+    {
+        name: "BFMC 2026",
+        images: [projectsImages[12].image, projectsImages[12].imageBlack],
+        technologies: [
+            { node: <FaGit />, title: "Git", href: "https://git-scm.com" },
+            { node: <RiAngularjsLine />, title: "Angular", href: "https://angular.io" },
+            { node: <FaPython />, title: "Python", href: "https://python.org" },
+            { node: <MdGpsFixed />, title: "Localization System", href: "" },
+            { node: <SiSocketdotio />, title: "Socket.io", href: "https://socket.io" },
+        ],
+        description: "A competition about building an autonomous car, where my role was path planning, localization system and maneuvers.",
+        github: "https://github.com/Bahna-Darius/NovaVision_Brain",
     },
     {
         name: "Debugged Life",

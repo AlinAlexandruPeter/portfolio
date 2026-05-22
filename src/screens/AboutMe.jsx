@@ -17,7 +17,7 @@ const AboutMe = () => {
       'sm:text-[100px]',
       'lg:text-[60px] lg:px-12',
       'xl:text-[90px]',
-      '2xl:text-[180px] 2xl:px-12',
+      '2xl:text-[120px] 2xl:px-12',
     )}>
         <h1 className='uppercase'>About</h1>
         <div className={cn(
@@ -38,7 +38,7 @@ const AboutMe = () => {
           'sm:text-2xl',
           'lg:text-xl lg:w-1/2 lg:h-16',
           'xl:text-2xl xl:h-auto',
-          '2xl:text-4xl',
+          '2xl:text-3xl',
         )}>
             {currentText}
         </p>

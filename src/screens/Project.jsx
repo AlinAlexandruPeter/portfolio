@@ -34,12 +34,12 @@ const Project = ({ currentProject }) => {
                 <p className='w-1/2 text-4xl font-[inter] text-right'>{currentProject.description}</p>
                 <div className='z-20 text-4xl flex items-center gap-6'>
                     <a
-                        href='https://github.com'
+                        href={currentProject.github}
                         className='bg-(--third) text-white px-2 mt-6 rounded-sm hover:scale-105 transition-transform duration-300'>
                         Website
                     </a>
                     <a
-                        href='https://github.com'
+                        href={currentProject.live || currentProject.github}
                         className='bg-(--third) text-white px-2 mt-6 rounded-sm hover:scale-105 transition-transform duration-300'>
                         GitHub
                     </a>

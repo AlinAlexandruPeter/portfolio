@@ -10,6 +10,7 @@ import andreea from "../assets/images/projects-images/turqoise-v/andreea.png";
 import promptWorld from "../assets/images/projects-images/turqoise-v/prompt-world.png";
 import solarisTales from "../assets/images/projects-images/turqoise-v/solaris-tales.png";
 import passaparola from "../assets/images/projects-images/turqoise-v/portfolio.png";
+import bfmc from "../assets/images/projects-images/turqoise-v/bfmc.png";
 
 import chatspaceBlack from "../assets/images/projects-images/black-v/chat-space-black.png";
 import chesslyzeBlack from "../assets/images/projects-images/black-v/chesslyze-black.png";
@@ -23,6 +24,7 @@ import andreeaBlack from "../assets/images/projects-images/black-v/andreea-black
 import promptWorldBlack from "../assets/images/projects-images/black-v/prompt-world-black.png";
 import solarisTalesBlack from "../assets/images/projects-images/black-v/solaris-tales-black.png";
 import passaparolaBlack from "../assets/images/projects-images/black-v/portfolio-black.png";
+import bfmcBlack from "../assets/images/projects-images/black-v/bfmc-black.png";
 
 const projectsImages = [
     { id: 1, image: chatspace, imageBlack: chatspaceBlack },
@@ -37,6 +39,7 @@ const projectsImages = [
     { id: 10, image: chesslyze, imageBlack: chesslyzeBlack },
     { id: 11, image: instaClone, imageBlack: instaCloneBlack },
     { id: 12, image: passaparola, imageBlack: passaparolaBlack },
+    { id: 13, image: bfmc, imageBlack: bfmcBlack }
 ]
 
 export default projectsImages
