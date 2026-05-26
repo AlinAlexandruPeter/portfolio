@@ -1,4 +1,5 @@
-# Peter Alin-Alexandru's Portfolio [alinpeter.my](https://alinpeter.my)
+# Peter Alin-Alexandru's Portfolio 
+## [alinpeter.my](https://alinpeter.my)
 [![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/AlinAlexandruPeter/portfolio)
 
 This repository contains the source code for my personal portfolio website. It's a modern, single-page application built with React and Vite, designed to showcase my projects, experience, and skills as a developer. The site places a strong emphasis on dynamic animations, custom transitions, and a unique user experience.
