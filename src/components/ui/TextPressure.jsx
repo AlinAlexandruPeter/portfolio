@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 const TextPressure = ({
   text = 'Compressa',
   fontFamily = 'Roboto Flex',
-  fontUrl = '../../assets/RobotoFlex.ttf',
+  fontUrl = '../../assets/fonts/RobotoFlex.ttf',
 
   width = true,
   weight = true,
