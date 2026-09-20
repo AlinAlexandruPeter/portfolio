@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
+import RobotoFlexFont from '../../assets/fonts/RobotoFlex.ttf';
 
 const TextPressure = ({
   text = 'Compressa',
   fontFamily = 'Roboto Flex',
-  fontUrl = '../../assets/fonts/RobotoFlex.ttf',
+  fontUrl = RobotoFlexFont,
 
   width = true,
   weight = true,
