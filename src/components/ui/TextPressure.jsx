@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 
 const TextPressure = ({
   text = 'Compressa',
-  fontFamily = 'Compressa VF',
-  fontUrl = 'https://res.cloudinary.com/dr6lvwubh/raw/upload/v1529908256/CompressaPRO-GX.woff2',
+  fontFamily = 'Roboto Flex',
+  fontUrl = 'https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&display=swap',
 
   width = true,
   weight = true,
